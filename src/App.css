@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 .App {
   text-align: center;
   background-color: white;
+  background-image: url("https://image.freepik.com/free-vector/vector-polka-background-with-small-dots_1017-13972.jpg");
+
 }
 
 .App-logo {
@@ -38,7 +41,6 @@ display: block;
 
 .font{
   font-family: 'Alegreya', serif;
-  padding: 40px;
   font-size: 20px;
 }
 
@@ -52,4 +54,17 @@ display: block;
 .Font{
   font-family: 'Alegreya', serif;
   font-display: bold;
+  font-size: 30px;
+}
+.FontBar{
+  font-family: 'Alegreya', serif;
+  font-display: bold;
+  font-size: 18px;
+}
+.cardBody {
+  background-image: linear-gradient(white, rgb(248, 209, 213))
+}
+.taste {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }

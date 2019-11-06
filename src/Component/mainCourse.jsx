@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Recipes extends Component {
+export default class mainCourse extends Component {
     render() {
         return (
             <div>
-                HIII
+                
             </div>
         )
     }

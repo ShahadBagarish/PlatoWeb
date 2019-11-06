@@ -16,7 +16,7 @@ const Articals = {
       ,
       {
         "id":3,
-        "src": "https://www.thelaughingcow.co.uk/wp-content/uploads/2017/04/Good-fats-683x1024.jpg",
+        "src": "https://imageresizer.static9.net.au/5Eq_FbGWKOhpdIk4yoQQzxJEdK4=/1274x717/smart/https%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FNetwork%2FImages%2F2017%2F10%2F18%2F20%2F41%2F171018_coach_healthy_fat.jpg",
         "title": "Replace saturated with unsaturated fat",
         "overview": "Fats are important for good health and proper functioning of the body. However, too much of it can negatively affect our weight and cardiovascular health."
       }
@@ -27,20 +27,20 @@ const Articals = {
         "title": "Enjoy plenty of fruits and vegetables",
         "overview": "Fruits and vegetables are among the most important foods for giving us enough vitamins, minerals and fibre. We should try to eat at least 5 servings a day. For example, a glass of fresh fruit juice at breakfast, perhaps an apple and a piece of watermelon as snacks, and a good portion of different vegetables at each meal."
       }
-      ,
-      {
-        "id":5,
-        "src": "https://assets.vancouverisawesome.com/wp-content/uploads/2019/01/22101528/eat-variety-healthy-foods-image-min.jpg",
-        "title": "Eat regularly, control the portion size",
-        "overview": "Eating a variety of foods, regularly, and in the right amounts is the best formula for a healthy diet. Skipping meals, especially breakfast, can lead to out-of-control hunger, often resulting in helpless overeating. Snacking between meals can help control hunger, but snacking should not replace proper meals."
-      }
-      ,
-      {
-        "id":6,
-        "src": "https://www.heartfoundation.org.au/images/made/images/uploads/main/Salt-sacks-on-wooden-background_800_480_85_s_c1.jpg",
-        "title": "Reduce salt and sugar intake",
-        "overview": "A high salt intake can result in high blood pressure, and increase the risk of cardiovascular disease"
-      }
+      // ,
+      // {
+      //   "id":5,
+      //   "src": "https://assets.vancouverisawesome.com/wp-content/uploads/2019/01/22101528/eat-variety-healthy-foods-image-min.jpg",
+      //   "title": "Eat regularly, control the portion size",
+      //   "overview": "Eating a variety of foods, regularly, and in the right amounts is the best formula for a healthy diet. Skipping meals, especially breakfast, can lead to out-of-control hunger, often resulting in helpless overeating. Snacking between meals can help control hunger, but snacking should not replace proper meals."
+      // }
+      // ,
+      // {
+      //   "id":6,
+      //   "src": "https://www.heartfoundation.org.au/images/made/images/uploads/main/Salt-sacks-on-wooden-background_800_480_85_s_c1.jpg",
+      //   "title": "Reduce salt and sugar intake",
+      //   "overview": "A high salt intake can result in high blood pressure, and increase the risk of cardiovascular disease"
+      // }
     ]
 }
 export default Articals;
