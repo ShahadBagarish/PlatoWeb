@@ -27,20 +27,6 @@ const Articals = {
         "title": "Enjoy plenty of fruits and vegetables",
         "overview": "Fruits and vegetables are among the most important foods for giving us enough vitamins, minerals and fibre. We should try to eat at least 5 servings a day. For example, a glass of fresh fruit juice at breakfast, perhaps an apple and a piece of watermelon as snacks, and a good portion of different vegetables at each meal."
       }
-      // ,
-      // {
-      //   "id":5,
-      //   "src": "https://assets.vancouverisawesome.com/wp-content/uploads/2019/01/22101528/eat-variety-healthy-foods-image-min.jpg",
-      //   "title": "Eat regularly, control the portion size",
-      //   "overview": "Eating a variety of foods, regularly, and in the right amounts is the best formula for a healthy diet. Skipping meals, especially breakfast, can lead to out-of-control hunger, often resulting in helpless overeating. Snacking between meals can help control hunger, but snacking should not replace proper meals."
-      // }
-      // ,
-      // {
-      //   "id":6,
-      //   "src": "https://www.heartfoundation.org.au/images/made/images/uploads/main/Salt-sacks-on-wooden-background_800_480_85_s_c1.jpg",
-      //   "title": "Reduce salt and sugar intake",
-      //   "overview": "A high salt intake can result in high blood pressure, and increase the risk of cardiovascular disease"
-      // }
     ]
 }
 export default Articals;

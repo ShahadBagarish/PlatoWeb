@@ -14,7 +14,7 @@ export default class SingleAppetizer extends Component {
                 <Card >
                     <Card.Img variant="top" src={this.props.meal.strMealThumb} />
                     <Card.Body>
-                    <Button as={Link} to={`/appetizer/${id}`} fluid style={{ color: 'black', 'fontSize': '16px' }}><b>{this.props.meal.strMeal}</b>r</Button>
+                    <Button as={Link} to={`/appetizer/${id}`} fluid style={{ color: 'black', 'fontSize': '16px' }}><b>{this.props.meal.strMeal}</b></Button>
                     </Card.Body>
                 </Card>
             </Col>

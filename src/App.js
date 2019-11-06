@@ -13,10 +13,13 @@ import linkedln from "./image/linkedln.png"
 //component
 import Home from './Component/Home';
 import Appetizer from './Component/Appetizer';
-import About from './Component/About';
-import Contact from './Component/Contact';
 import RecipeAppetizer from './Component/RecipeAppetizer '
-import mainCourse from './Component/mainCourse';
+import Beef from './Component/Beef';
+import Pasta from './Component/Pasta';
+import RecipeBeef from './Component/RecipeBeef';
+import RecipePasta from './Component/RecipePasta';
+import Dessert from './Component/Dessert';
+import RecipDessert from './Component/RecipDessert';
 
 export default class App extends Component {
 
@@ -26,7 +29,6 @@ export default class App extends Component {
     slide2: '',
     slide3: ''
   }
-
   componentDidMount() {
     Axios.all([
       Axios.get('https://www.themealdb.com/api/json/v1/1/random.php'),
@@ -35,7 +37,6 @@ export default class App extends Component {
       Axios.get('https://www.themealdb.com/api/json/v1/1/categories.php')
     ])
       .then(Axios.spread((res1, res2, res3, res4) => {
-        // console.log(res4.data);
         this.setState({
           slide1: res1.data.meals[0], slide2: res2.data.meals[0], slide3: res3.data.meals[0],
           categories: res4.data
@@ -43,11 +44,7 @@ export default class App extends Component {
       }
       ))
   }
-
-
   render() {
-    // if(!this.state.categories.length) return <div className="App"></div>   
-    // console.log(this.state.categories)
     return (
       <div className="App">
         <BrowserRouter>
@@ -68,13 +65,16 @@ export default class App extends Component {
           </Navbar>
           <div className='home'>
             <Switch>
-              <Route path='/about' component={About} />
-              <Route path='/contact' component={Contact} />
-              <Route exact path='/mainCourse' component={mainCourse} />
+            <Route exact path='/dessert' component={Dessert} />
+              <Route path='/dessert/:idMeal' render={(props)=> <RecipDessert {...props}/>} />
+              <Route exact path='/beef' component={Beef} />
+              <Route path='/beef/:idMeal' render={(props)=> <RecipeBeef {...props}/>} />
+              <Route exact path='/pasta' component={Pasta} />
+              <Route path='/pasta/:idMeal' render={(props)=> <RecipePasta {...props}/>} />
               <Route exact path='/appetizer' component={Appetizer} />
               <Route path='/appetizer/:idMeal' render={(props)=> <RecipeAppetizer {...props}/>} />
               <Route path='/home' render={() => this.state.categories !== null && <Home slide1={this.state.slide1} slide2={this.state.slide2} slide3={this.state.slide3}
-                categories={this.state.categories} />} /> */}
+                categories={this.state.categories} />} /> 
             {<Route path='/' render={() => this.state.categories !== null && <Home slide1={this.state.slide1} slide2={this.state.slide2} slide3={this.state.slide3} categories={this.state.categories} />} />}
             </Switch>
           </div>

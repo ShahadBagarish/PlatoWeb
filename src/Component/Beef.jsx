@@ -3,28 +3,28 @@ import { Image, Row, Navbar, Nav, Dropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import logo from "../image/logo_transparent.png"
 import Axios from 'axios'
-import SingleAppetizer from './SingleAppetizer'
 import { Button } from 'semantic-ui-react'
+import SingleBeef from './SingleBeef'
 
-export default class Appetizer extends Component {
+export default class Beef extends Component {
     state = {
-        appetizer: [],
+        beef: [],
     }
     componentDidMount() {
 
-        Axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Side')
+        Axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef')
             .then((res) => {
                 this.setState({
-                    appetizer: res.data.meals
+                    beef: res.data.meals
                 })
             })
     }
     render() {
-        var appetizer = this.state.appetizer.map(meal => {
-            return <SingleAppetizer meal={meal} />
+        var beef = this.state.beef.map(meal => {
+            return <SingleBeef meal={meal} />
         })
         return (
-            <div >
+            <div>
                 <Row className="justify-content-md-center">
                     <Image src={logo} alt="logo" style={{ width: 350, height: 120 }} rounded />
                 </Row>
@@ -51,9 +51,8 @@ export default class Appetizer extends Component {
                         </Navbar>
                     </Row>
                 <hr />
-                <Row className="justify-content-md-center">{appetizer}</Row>
+                <Row className="justify-content-md-center">{beef}</Row>
             </div>
         )
     }
 }
-
