@@ -24,8 +24,7 @@ Example:
 
 ```
 
-User must be able to 
-:
+User must be able to:
 - viewing the home page with healthy tips and different plates images 
 - Select the food categories 
 - View different recipes of that category 
