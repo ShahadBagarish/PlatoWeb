@@ -1,67 +1,66 @@
 # Plato 
 
-One Paragraph of project description goes here
+Plato provides recipes for food from around the world.
 
 ## Description
 
-A description of your project. Explain what is the project about and what is the use for it.
+Plato is react web application that helps the user to search around number of different food categories and view the ingredients and instructions of how to cooke it.
 
 ### Technical Used
-What technologies you used that helped you build this project. 
 
 ```
 Example:
 
-- React
-- Bootstrap with react
-- Ajax (axios) for API
-- etc..
+- React js 
+- Node js
+- React route
+- Bootstrap 
+- Semantic UI
+- Axios
 ```
-
-### Wireframes
-
-Your step by step planning sketch of your project, that you can post them as an image in here.
 
 ### User Stories
 
-A story of the project user, that explains the use of the project.
-
 ```
-Example:
 
-User must be able to:
-
-- View Example
-- Blablabla
-- Search Example
-- Fine Example
-- etc..
+User must be able to 
+:
+- viewing the home page with healthy tips and different plates images 
+- Select the food categories 
+- View different recipes of that category 
+- Select the favorite recipes 
+- View instructions to cook it.
 
 ```
 
 ---
 
 ## Planning and Development Process
-
-A basic story of your planning and developing this project.
+- find an API works well and provide data for free 
+- Inspired the idea 
+- Sketch the wireframes and the series hierarchy between components 
+- Start design component
+- Use route to go around pages 
+- Take the data from API and use it with component 
+- Finally, review and clean the code  
 
 ### Problem-Solving Strategy
 
-What strategy did you use to solve your problems.
+Using the inspect tool provide by chrome to view all the console log() print to detect data
 
-### Unsolved problems
-
-List unsolved problems which would be fixed in future iterations.
 
 ## APIs Used
 
-List your APIs you have used in this project and explain why did you use it.
-
----
-
-## Acknowledgments
-
+- (https://www.themealdb.com/api/json/v1/1/random.php) for generate random recipes each load
+- (https://www.themealdb.com/api/json/v1/1/categories.php) find the recipes category
+- (https://www.themealdb.com/api/json/v1/1/filter.php?c=${this.props.match.params.idCategory}) filter meal by it's categories
+- (https://www.themealdb.com/api/json/v1/1/lookup.php?i=${this.props.match.params.idMeal}) filter meal by it's is's
 
 ---
 
  ## References
+- [Bootstrab react](https://react-bootstrap.netlify.com/)
+- [Semantic UI](https://react.semantic-ui.com/)
+- [React Rout](https://reacttraining.com/react-router/web/guides/quick-start)
+
+
