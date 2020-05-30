@@ -6,6 +6,8 @@ Plato provides recipes for food from around the world.
 
 Plato is react web application that helps the user to search around number of different food categories and view the ingredients and instructions of how to cooke it.
 
+To visit (https://plato-shahad.herokuapp.com/)
+
 ### Technical Used
 
 ```
